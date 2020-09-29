@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/capture"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".add_medicine">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/aguafina_script"
+        android:text="Add Medicine"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/iv_med"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click on the camera to add a picture"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/tv_Nmed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter Medicine Name"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#01082E"
+        android:textColorHint="#8e98b4"
+        android:textColorLink="#F60B0B" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="Take it   :"
+            android:textColor="#8e98b4"
+            android:textColorHighlight="#DD5790"
+            android:textColorLink="#F60B0B"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/tv_tsmed"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical|end"
+            android:text="Times"
+            android:textColor="#8e98b4"
+            android:textColorHighlight="#DD5790"
+            android:textColorLink="#F60B0B"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="Start at : "
+            android:textColor="#8e98b4"
+            android:textColorHighlight="#DD5790"
+            android:textColorLink="#F60B0B"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/tv_tmed"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:inputType="time"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#DD5790"
+            android:textColorLink="#F60B0B" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#8e98b4"
+            android:text="ToggleButton"
+            android:textColor="#FFF"
+            android:textOff="AM"
+            android:textOn="PM"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="ADD"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="10dp"
+        app:strokeColor="#FFF"
+        app:strokeWidth="1dp"/>
+
+</LinearLayout>
